@@ -1,13 +1,19 @@
-*
-	margin: 0
-	padding: 0
-body
-	background: #FFF
-	+css-lock(16, 50, 600, 1000)
-	line-height: 1.4
+
+// body
+// 	background: #FFF
+// 	+css-lock(16, 50, 600, 1000)
+// 	line-height: 1.4
 .container
 	margin: 0 auto
-	width: 1170px
+	+r(767)
+		padding: 0 20px
+		width: 100%
+	+rmin(768)
+		width: 750px
+	+rmin(992)
+		width: 970px
+	+rmin(1200)
+		width: 1170px
 a
 	text-decoration: none
 .clearfix

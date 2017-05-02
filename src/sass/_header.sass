@@ -16,54 +16,62 @@
         background-position: center
         box-shadow: 0 6px 22px rgba(0, 0, 0, 0.15)
         cursor: pointer
+.nav
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
 .logo
-    float: left
+    +r(991)
+        margin: 0 auto
 .main-nav
-    float: right
+    +r(991)
+        margin: 0 auto
     &__item
         display: inline-block
     &__link
         padding: 0 25px
         color: #fffefe
         font-family: Roboto
-        font-size: 15px
         font-weight: 400
         line-height: 44px
+        +css-lock(10, 15, 320, 991)
     &__log
         padding: 0 25px
         border-left: 1px solid #fff
         color: #fffefe
         font-family: Roboto
-        font-size: 15px
         font-weight: 700
         line-height: 44px
         text-transform: uppercase
+        +css-lock(10, 15, 320, 991)
     &__sign
         padding: 17px 25px
         color: #fffefe
         font-family: Roboto
-        font-size: 15px
         font-weight: 700
         line-height: 44px
         text-transform: uppercase
         border-radius: 21px
         border: 2px solid #fff
+        +css-lock(10, 15, 320, 991)
 .slider
     &__content
         margin-top: 229px
     &__text
+        margin: 63px 0
         color: #e2f0ff
         font-family: Roboto
-        font-size: 22px
         font-weight: 400
         line-height: 44px
-h1
+        +css-lock(15, 22, 320, 991)
+.h1
+    text-shadow: 0 3px 12px rgba(0, 0, 0, 0.1)
     color: #fff
     font-family: Montserrat
-    font-size: 52px
     font-weight: 900
-    line-height: 64px
     text-transform: uppercase
+    +css-lock(30, 52, 320, 991)
 .button
     padding: 20px 35px
     box-shadow: 0 6px 22px rgba(0, 0, 0, 0.35)
@@ -71,10 +79,10 @@ h1
     background-color: #00be9d
     color: #fff
     font-family: Roboto
-    font-size: 16px
     font-weight: 500
     line-height: 44px
     text-transform: uppercase
+    +css-lock(10, 16, 320, 991)
     &_gradient
         padding: 25px
         background-image: linear-gradient(to right, #00be9d 0%, #0082f9 100%)

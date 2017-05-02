@@ -2,27 +2,33 @@
     padding: 49px 0 25px 0
     &__container
         display: flex
+        flex-wrap: wrap
         justify-content: space-between
     &__about
         width: 465px
+        +r(577)
+            width: 100%
+    &__item
+        &:nth-child(n+2)
+            margin-top: 10px
     &__text
         color: #737171
         font-family: Roboto
-        font-size: 14px
         font-weight: 400
         line-height: 24px
+        +css-lock(10, 14, 320, 577)
     &__link
         color: #737171
         font-family: Roboto
-        font-size: 14px
         font-weight: 400
+        +css-lock(10, 14, 320, 577)
 .network
     &__item
         display: inline-block
 .h4
     color: #313131
     font-family: Montserrat
-    font-size: 15px
     font-weight: 700
     line-height: 44px
     text-transform: uppercase
+    +css-lock(12, 15, 320, 577)
