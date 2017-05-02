@@ -1,0 +1,53 @@
+--- title: Index page --- {% extends "layouts/_layout.html" %} {% block main %}
+<main class="main">
+  <div class="container">
+    <section class="about">
+      <h2 class="h2">Why Spacewolff</h2>
+      <ul class="list">
+        {% for item in items.list %}
+        <li class="list__item">
+          <img class="list__img" src="{{item.img.src}}" alt="{{item.img.alt}}">
+          <h4 class="list__h4">{{item.title}}</h4>
+          <p class="list__text">{{item.text}}</p>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+    <section class="description">
+      <h2 class="h2">we make advertising simple</h2>
+      <p class="description__text">
+        Find ad space that reaches your targeted audience and place ads directly through the site. Monetize your space by selling
+        it to the advertisers on the site.<br> View your user dashboard to see how much you’ve earned and how much
+        you’ve spent.<br>
+        <a href="#" class="button">Get Started</a>
+      </p>
+    </section>
+    <section class="offer">
+      <h2 class="h2">How it Works</h2>
+      <p class="offer__text">Our marketplace connects advertisers and sellers<br> of ad space directly.</p>
+      <ul class="list">
+        {% for item in items.list2 %}
+        <li class="list__item">
+          <img class="list__img" src="{{item.img.src}}" alt="{{item.img.alt}}">
+          <h4 class="list__h4">{{item.title}}</h4>
+          <p class="list__text">{{item.text}}</p>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+    <section class="listings">
+      <ul class="listings__list">
+        <li class="listings__item">
+          <h3 class="listings__h3">Advertise with<br> Spacewolff</h3>
+        </li>
+        <li class="listings__item">
+            <p class="listings__text">Put your ad on Spacewolff’s homepage, in<br> Spacewolff’s emails, and on Spacewolff’s blog.</p>
+        </li>
+        <li class="listings__item">
+          <a href="#" class="button">View Our Listings</a>
+        </li>
+      </ul>
+    </section>
+  </div>
+</main>
+{% endblock %}

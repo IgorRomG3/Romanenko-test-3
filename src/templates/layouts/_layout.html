@@ -1,0 +1,39 @@
+{% import "partials/_mixins.html" as mixins %}
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{% if title %}{{ title }}{% else %}Template{% endif %}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" media="all" href="css/app.css">
+    {# {% include "../partials/_media-tags.html" %} #}
+  </head>
+  <body>
+    {% import "data/data.html" as items %}
+    <!-- BEGIN header -->
+      {% block header %}
+        {% include "partials/_header.html" %}
+      {% endblock %}
+    <!-- END header -->
+
+    <!-- BEGIN main -->
+      {% block main %}{% endblock %}
+    <!-- END main -->
+
+    <!-- BEGIN footer -->
+      {% block footer %}
+        {% include "partials/_footer.html" %}
+      {% endblock %}
+    <!-- END footer -->
+
+    <!-- BEGIN scripts -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- END scripts -->
+
+  </body>
+</html>
