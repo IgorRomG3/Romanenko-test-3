@@ -24,11 +24,27 @@
 .logo
     +r(991)
         margin: 0 auto
-.main-nav
+    +r(557)
+        margin: 0
+.menu
     +r(991)
         margin: 0 auto
+    +r(557)
+        flex-basis: 100%
+        height: 0
+        overflow: hidden
+        text-align: center
+        background-color: #00be9d
+        background-image: linear-gradient(to right, #00be9d 0%, #0082f9 100%)
+        transition: height 1s ease
+        transition: height 1s ease
+        &_js
+            height: 230px
+            transition: height 1s ease
     &__item
         display: inline-block
+        +r(557)
+            display: block
     &__link
         padding: 0 25px
         color: #fffefe
@@ -45,6 +61,8 @@
         line-height: 44px
         text-transform: uppercase
         +css-lock(10, 15, 320, 991)
+        +r(557)
+            border-left: 0
     &__sign
         padding: 17px 25px
         color: #fffefe
@@ -55,9 +73,25 @@
         border-radius: 21px
         border: 2px solid #fff
         +css-lock(10, 15, 320, 991)
+.toggle
+    padding: 5px 10px 10px 10px
+    border: 1px solid #888
+    border-radius: 4px
+    display: none
+    +r(557)
+        display: block
+    &:hover
+        background-color: #fff
+    &__item
+        margin-top: 5px
+        display: block
+        background-color: #888
+        width: 22px
+        height: 2px
+        border-radius: 1px
 .slider
     &__content
-        margin-top: 229px
+        margin-top: 129px
     &__text
         margin: 63px 0
         color: #e2f0ff

@@ -7,21 +7,27 @@
             <img src="img/logo.png" alt="" class="logo__img">
           </a>
         </div>
-        <ul class="main-nav">
+        <div class="toggle">
+          <span class="toggle__item"></span>
+          <span class="toggle__item"></span>
+          <span class="toggle__item"></span>
+        </div>
+        <ul class="menu">
           
           {% for item in items.nav %}
-            <li class="main-nav__item">
-              <a href="#" class="main-nav__link">{{item.content}}</a>
+            <li class="menu__item">
+              <a href="#" class="menu__link">{{item.content}}</a>
             </li>
           {% endfor %}
 
-          <li class="main-nav__item">
-              <a href="#" class="main-nav__log">Log In</a>
+          <li class="menu__item">
+              <a href="#" class="menu__log">Log In</a>
           </li>
-          <li class="main-nav__item">
-              <a href="#" class="main-nav__sign">Sign Up </a>
+          <li class="menu__item">
+              <a href="#" class="menu__sign">Sign Up </a>
           </li>
         </ul>
+        <div class="clearfix"></div>
       </nav>
       <div class="slider__content">
         <h1 class="h1">Crowdsourced<br>ad Space</h1>
