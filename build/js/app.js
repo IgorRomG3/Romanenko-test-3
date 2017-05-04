@@ -2781,4 +2781,8 @@ toggleBtn.addEventListener('click', function (e) {
 
 // MENU TOGGLE FINISH
 
+jQuery(function ($) {
+    $('.slick').slick();
+});
+
 // sayHello();
