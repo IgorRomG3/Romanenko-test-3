@@ -30,7 +30,7 @@
     align-items: center
     +r(798)
         left: 0
-        right: 5%
+        right: 0
 .logo
     +r(1149)
         margin: 0 auto
@@ -46,6 +46,7 @@
         text-align: center
         background-color: #00be9d
         background-image: linear-gradient(to right, #00be9d 0%, #0082f9 100%)
+        opacity: .8
         transition: height 1s ease
         transition: height 1s ease
         &_js
@@ -90,6 +91,7 @@
     display: none
     +r(798)
         display: block
+        margin-right: 5%
     &:hover
         background-color: #fff
     &__item
@@ -117,9 +119,9 @@
     text-transform: uppercase
     +css-lock(30, 52, 320, 991)
 .button
-    padding: 20px 35px
+    padding: 12px 35px
     box-shadow: 0 6px 22px rgba(0, 0, 0, 0.35)
-    border-radius: 29px
+    border-radius: 32px
     background-color: #00be9d
     color: #fff
     font-family: Roboto
@@ -128,5 +130,4 @@
     text-transform: uppercase
     +css-lock(10, 16, 320, 991)
     &_chameleon
-        padding: 25px
         background-image: linear-gradient(to right, #00be9d 0%, #0082f9 100%)
